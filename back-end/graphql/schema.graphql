@@ -1,0 +1,28 @@
+type Person {
+    id:Int!
+    name: String!
+    age: Int!
+    gender: String!
+}
+
+type Test {
+    id:String
+    pw:String
+    auth:String
+}
+
+type Test2 {
+    id:String
+    pw:String
+    auth:String
+    grp:String
+    chng_user_id:String
+    chng_dttm:Date
+}
+
+type Query{
+    getDbPeople: [Test]
+    getDbPeople2: [Test2]
+}
+
+scalar Date
